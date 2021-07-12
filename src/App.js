@@ -1,6 +1,5 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles/variables.scss';
 import NavBar from './components/NavBar'
 
 function App() {
