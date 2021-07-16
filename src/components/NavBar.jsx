@@ -1,5 +1,6 @@
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import CartWidget from './CartWidget'
 const NavBar = () => {
 
     return (
@@ -17,9 +18,10 @@ const NavBar = () => {
             <Nav.Link href="#">Iniciar sesión</Nav.Link>
           </Nav>
         </Navbar.Collapse>
+         <CartWidget /> 
       </Navbar>
 
-
+      
     )
 }
 
