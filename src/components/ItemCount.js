@@ -14,6 +14,10 @@ function ItemCount({ initial, stock, onAdd }) {
     }
   };
 
+  const handleOnAdd = () => {
+    onAdd(cantidad)
+  };
+
   return (
     <div className="card w-60">
       <div className="card-header">
@@ -21,7 +25,7 @@ function ItemCount({ initial, stock, onAdd }) {
       </div>
       <div className="card-body">
         <button onClick={handleRemove}>-</button>
-        <button className="btn brn-primary bnt-block" onClick={()=>onAdd(cantidad)}>Agregar</button>
+        <button className="btn brn-primary bnt-block" onClick={handleOnAdd}>Agregar</button>
         <button onClick={handleAdd}>+</button>
       </div>
     </div>
