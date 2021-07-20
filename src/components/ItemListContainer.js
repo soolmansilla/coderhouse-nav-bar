@@ -1,16 +1,16 @@
-import ItemCount from "./ItemCount";
+//import ItemCount from "./ItemCount";
+import ItemList from "./ItemList";
 
-const handleCount=(cant)=>{
- alert('agregaste '+ cant)
-}
+function ItemListContainer() {
 
- const ItemListContainer = ({greeting}) => {
-    return (
-        <div>
-            <h1>{greeting}</h1>
-            <ItemCount stock={5} initial={1} onAdd={handleCount} />
-        </div>
-    );
+  return (
+    <div>
+      {/* <h1>{greeting}</h1> 
+            <ItemList />*/}
+      {/* <ItemCount stock={5} initial={1} onAdd={handleCount} /> */}
+   <ItemList />
+    </div>
+  );
 }
 
 export default ItemListContainer;
