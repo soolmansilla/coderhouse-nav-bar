@@ -4,7 +4,7 @@ import ItemList from "./ItemList";
 function ItemListContainer() {
 
   return (
-    <div>
+    <div className="container">
       {/* <h1>{greeting}</h1> 
             <ItemList />*/}
       {/* <ItemCount stock={5} initial={1} onAdd={handleCount} /> */}
