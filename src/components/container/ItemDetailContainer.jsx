@@ -4,7 +4,7 @@ import { getItems } from './getItems' // export
 
 
 function ItemDetailContainer() {
-     const [itemDetail, setItemDetail] = useState([]);
+     const [itemDetail, setItemDetail] = useState({});
 
     useEffect(() => {   
          getItems()
@@ -14,9 +14,7 @@ function ItemDetailContainer() {
       console.log(itemDetail)
   return (
     <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-   { itemDetail.map((itemcito,i )=> <ItemDetail key={i} title={itemcito.title} url={itemcito.url} description={itemcito.description} />
-   )}
-         {/* <ItemDetail item={itemDetail} />  */}
+      <ItemDetail item={itemDetail} /> 
     </div>
   )
 }

@@ -1,5 +1,6 @@
 //import ItemCount from "./ItemCount";
 import ItemList from "./ItemList";
+import CardGroup from 'react-bootstrap/CardGroup'
 
 function ItemListContainer() {
 
@@ -8,7 +9,9 @@ function ItemListContainer() {
       {/* <h1>{greeting}</h1> 
             <ItemList />*/}
       {/* <ItemCount stock={5} initial={1} onAdd={handleCount} /> */}
+      <CardGroup> 
    <ItemList />
+   </CardGroup>
     </div>
   );
 }
